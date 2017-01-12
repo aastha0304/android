@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Targetting:Off"
+            android:id="@+id/targetting"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#0973ff"
+            android:onClick="onTargettingChecked"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:layout_below="@+id/targetting"
+            android:textSize="@dimen/abc_text_size_title_material"
+            android:textStyle="bold"
+            android:textAlignment="gravity"
+            android:layout_alignParentTop="false" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:id="@+id/synopsis"
+            android:textSize="@dimen/abc_text_size_body_1_material"
+            android:layout_below="@+id/title" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bannerAd"
+            android:src="@drawable/organic_banner"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/subtext"/>
+
+        <TextView
+            android:text="Tap for full text..."
+            android:id="@+id/subtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/synopsis"
+            android:textAlignment="gravity"
+            android:gravity="right"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textStyle="italic" />
+
+</RelativeLayout>
